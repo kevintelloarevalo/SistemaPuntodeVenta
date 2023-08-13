@@ -23,7 +23,7 @@
     <!-- comienza desde aqui -->
   <section class="content">
 
-    <div class="box">
+    <div class="box"> <!--Marco ---->
 
       <div class="box-header with-border">
 
@@ -35,7 +35,7 @@
       
       </div>
        <!-- Cuerpo de nuestra pagina de usuario -->
-       <div class="box-body">
+      <div class="box-body">
         
         <table class="table table-bordered table-striped dt-responsive tablas" width="100%"> 
           
@@ -84,7 +84,7 @@
 
                       <td>'.$value["trabajo"].'</td>
 
-                      <td>'.$value["sueldo"].'</td>    
+                      <td>S/. '.$value["sueldo"].'</td>    
                       
                       <td>'.$value["direccion"].'</td>
                       
@@ -163,7 +163,7 @@ MODAL AGREGAR EMPLEADO
               
                 <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span> 
 
-                <input type="text" class="form-control input-lg form-control-lg" name="nuevoEmpleado" placeholder="Ingresar nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required><!-- Sivalida-->
+                <input type="text" class="form-control input-lg form-control-lg" name="nuevoEmpleado" placeholder="Ingresar nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,64}" required><!-- Sivalida-->
 
                 <!-- Mensajes para validación   -->
                 <div class="valid-feedback">¡Campo válido!</div>
@@ -180,7 +180,7 @@ MODAL AGREGAR EMPLEADO
               
                 <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span> 
 
-                <input type="text" class="form-control input-lg form-control-lg" name="nuevoApellido" placeholder="Ingresar apellido paterno" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required><!-- Sivalida-->
+                <input type="text" class="form-control input-lg form-control-lg" name="nuevoApellido" placeholder="Ingresar apellido paterno" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,64}" required><!-- Sivalida-->
 
                 <!-- Mensajes para validación   -->
                 <div class="valid-feedback">¡Campo válido!</div>
@@ -233,7 +233,7 @@ MODAL AGREGAR EMPLEADO
               
                 <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span> 
 
-                <input type="text" class="form-control input-lg form-control-lg" name="nuevoTrabajo" placeholder="Ingresar  el trabajo" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,15}" required><!-- Sivalida-->
+                <input type="text" class="form-control input-lg form-control-lg" name="nuevoTrabajo" placeholder="Ingresar  el trabajo" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,15}" required><!-- Sivalida-->
 
                 <!-- Mensajes para validación   -->
                 <div class="valid-feedback">¡Campo válido!</div>

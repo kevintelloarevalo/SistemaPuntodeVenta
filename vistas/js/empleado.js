@@ -35,7 +35,7 @@ $(".tablas").on("click", ".btnEditarEmpleado", function(){
 })
 
 /*=============================================
-ELIMINAR CLIENTE
+ELIMINAR EMPLEADO
 =============================================*/
 $(".tablas").on("click", ".btnEliminarEmpleado", function(){
 

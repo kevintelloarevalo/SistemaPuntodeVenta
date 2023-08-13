@@ -160,7 +160,7 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span> 
 
-                <input type="text" class="form-control input-lg form-control-lg" name="nuevoCliente" placeholder="Ingresar nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required><!-- Sivalida-->
+                <input type="text" class="form-control input-lg form-control-lg" name="nuevoCliente" placeholder="Ingresar nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,64}" required><!-- Sivalida-->
 
                 <!-- Mensajes para validación   -->
                 <div class="valid-feedback">¡Campo válido!</div>
@@ -177,7 +177,7 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span> 
 
-                <input type="text" class="form-control input-lg form-control-lg" name="nuevoApellido" placeholder="Ingresar apellido paterno" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required><!-- Sivalida-->
+                <input type="text" class="form-control input-lg form-control-lg" name="nuevoApellido" placeholder="Ingresar apellido paterno" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð]{2,64}" required><!-- Sivalida-->
 
                 <!-- Mensajes para validación   -->
                 <div class="valid-feedback">¡Campo válido!</div>

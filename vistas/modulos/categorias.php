@@ -138,10 +138,10 @@
                 <div class="input-group">
 
                   <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
-                  <input type="text" class="form-control input-lg form-control-lg" name="nuevaCategoria" placeholder="Ingresar categoria" pattern="[a-zA-Z ]{4,15}" required>
+                  <input type="text" class="form-control input-lg form-control-lg" name="nuevaCategoria" placeholder="Ingresar categoria" pattern="[a-zA-Z ]{4,40}" required>
                   <!-- Mensajes para validación   -->
                   <div class="valid-feedback">¡Campo válido!</div>
-                  <div class="invalid-feedback">La categoría solo podra contener letras no mayor a 15 digitos.</div>
+                  <div class="invalid-feedback">La categoría solo podra contener letras</div>
               
                 </div>
 

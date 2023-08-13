@@ -158,14 +158,14 @@
                   ENTRADA IMPUESTOS Y TOTAL
                   ======================================-->
                   
-                  <div class="col-xs-8 pull-right">
+                  <div class="col-8 pull-right">
                     
                     <table class="table">
 
                       <thead>
 
                         <tr>
-                          <th>Total</th>      
+                          <th>Total a Cancelar:</th>      
                         </tr>
 
                       </thead>
@@ -175,11 +175,11 @@
                         <tr>
                           
 
-                           <td style="width: 50%">
+                           <td style="width: 20%">
                             
-                            <div class="input-group" style="padding-right:70px">
+                            <div class="input-group" style="padding-right:20px">
                            
-                              <span class="input-group-text"><i class="ion ion-social-usd fa-fw"></i></span>
+                              <span class="input-group-text"><i class="fa fa-money fa-fw"></i></span>
 
                               <input type="text" class="form-control input-lg form-control-lg" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" placeholder="00000" readonly required>
 
@@ -209,7 +209,7 @@
 
                 <div class="form-group row">
                   
-                  <div class="col-xs-6" style="padding-right:0px">
+                  <div class="col-6" style="padding-right:70px">
                     
                      <div class="input-group">
                   
@@ -227,9 +227,11 @@
                   <div class="cajasMetodoPago"></div>
 
                   <input type="hidden" id="listaMetodoPago" name="listaMetodoPago">
+                  
 
                 </div>
 
+                <br>
                 <br>
       
               </div>

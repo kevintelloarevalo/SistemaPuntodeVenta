@@ -438,10 +438,8 @@ MODAL EDITAR PRODUCTO
 
              <!-- ENTRADA PARA PRECIO COMPRA -->
 
-            <div class="form-group row">
-
-                <div class="col-10">
-                
+            <div class="form-group">
+               
                   <div class="input-group">
                   
                     <span class="input-group-text"><i class="fa fa-arrow-up fa-fw "></i></span> 
@@ -452,12 +450,9 @@ MODAL EDITAR PRODUCTO
                   
                   </div>
 
-                </div>
 
                 <!-- ENTRADA PARA PRECIO VENTA -->
 
-                <div class="col-10">
-                
                   <div class="input-group">
                   
                     <span class="input-group-text"><i class="fa fa-arrow-down fa-fw"></i></span> 
@@ -467,9 +462,7 @@ MODAL EDITAR PRODUCTO
                     <div class="invalid-feedback">Solo se acepta números.</div>
                   
                   </div>
-                
-                </div>
-                
+
             </div>
 
             <!-- ENTRADA PARA SUBIR FOTO -->

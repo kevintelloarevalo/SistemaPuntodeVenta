@@ -143,33 +143,33 @@
 
                   $stockAntiguo = $respuesta["stock"] + $value["cantidad"];
                   
-                  echo '<div class="row" style="padding:5px 15px">
-            
-                        <div class="col-xs-6" style="padding-right:0px">
-            
+                  echo '<div class="row" style="padding:10px 30px">
+                        <div class="mb-2" >
+                        <h6><b>Precio:</b></h6>
                           <div class="input-group">
                 
-                            <span class="input-group-addon"><button type="button" class="btn btn-danger btn-xs quitarProducto" idProducto="'.$value["id"].'"><i class="fa fa-times"></i></button></span>
+                            <span class="input-group-text"><button type="button" class="btn-danger  quitarProducto" idProducto="'.$value["id"].'"><i class="fa fa-times fa-fw"></i></button></span>
 
-                            <input type="text" class="form-control nuevaDescripcionProducto" idProducto="'.$value["id"].'" name="agregarProducto" value="'.$value["descripcion"].'" readonly required>
+                            <input type="text" class="form-control input-lg form-control-lg nuevaDescripcionProducto" idProducto="'.$value["id"].'" name="agregarProducto" value="'.$value["descripcion"].'" readonly required>
 
                           </div>
 
                         </div>
 
-                        <div class="col-xs-3">
+                        <div class="col-3">
+                        <h6><b>Cantidad:</b></h6>
               
-                          <input type="number" class="form-control nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="'.$value["cantidad"].'" stock="'.$stockAntiguo.'" nuevoStock="'.$value["stock"].'" required>
+                          <input type="number" class="form-control input-lg form-control-lg nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="'.$value["cantidad"].'" stock="'.$stockAntiguo.'" nuevoStock="'.$value["stock"].'" required>
 
                         </div>
 
-                        <div class="col-xs-3 ingresoPrecio" style="padding-left:0px">
-
+                        <div class="col-6 ingresoPrecio">
+                        <h6><b>Total:</b></h6>
                           <div class="input-group">
 
-                            <span class="input-group-addon"><i class="ion ion-social-usd"></i></span>
+                            <span class="input-group-text"><i class="ion ion-social-usd fa-fw"></i></span>
                    
-                            <input type="text" class="form-control nuevoPrecioProducto" precioReal="'.$respuesta["precio_venta"].'" name="nuevoPrecioProducto" value="'.$value["total"].'" readonly required>
+                            <input type="text" class="form-control input-lg nuevoPrecioProducto" precioReal="'.$respuesta["precio_venta"].'" name="nuevoPrecioProducto" value="'.$value["total"].'" readonly required>
    
                           </div>
                
@@ -189,8 +189,8 @@
                 BOTÓN PARA AGREGAR PRODUCTO
                 ======================================-->
 
-                <button type="button" class="btn btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
-
+<!--                 <button type="button" class="btn btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
+ -->
                 <hr>
 
                 <div class="row">
@@ -206,7 +206,7 @@
                       <thead>
 
                         <tr>
-                          <th>Total</th>      
+                          <th>Total a Cancelar:</th>      
                         </tr>
 
                       </thead>
@@ -216,11 +216,11 @@
                         <tr>
                           
 
-                           <td style="width: 50%">
+                           <td style="width: 20%">
                             
-                            <div class="input-group">
+                            <div class="input-group" style="padding-right:20px">
                            
-                              <span class="input-group-text"><i class="ion ion-social-usd fa-fw"></i></span>
+                              <span class="input-group-text"><i class="fa fa-money fa-fw"></i></span>
 
                               <input type="text" class="form-control input-lg form-control-lg" id="nuevoTotalVenta" name="nuevoTotalVenta" value="<?php echo $venta["total"]; ?>" readonly required>
 

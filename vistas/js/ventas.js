@@ -97,39 +97,40 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
           	$(".nuevoProducto").append(
 
-          	'<div class="row" style="padding:5px 15px">'+
+          	'<div class="row" style="padding:10px 30px">'+
 
 			  '<!-- Descripción del producto -->'+
 	          
-	          '<div class="col-xs-6" style="padding-right:80px">'+
+	          '<div class="mb-2" >'+
+			  '<h6><b>Precio:</b></h6>'+
 	          
 	            '<div class="input-group">'+
-	              
-	              '<span class="input-group-text"><button type="button" class="btn btn-danger btn-xs quitarProducto" idProducto="'+idProducto+'"><i class="fa fa-times fa-fw"></i></button></span>'+
+				
+	              '<span class="input-group-text"><button type="button" class="btn-danger quitarProducto" idProducto="'+idProducto+'"><i class="fa fa-times fa-fw"></i></button></span>'+
 
-	              '<input type="text" class="form-control nuevaDescripcionProducto" idProducto="'+idProducto+'" name="agregarProducto" value="'+descripcion+'" readonly required>'+
+	              '<input type="text" class="form-control input-lg form-control-lg nuevaDescripcionProducto" idProducto="'+idProducto+'" name="agregarProducto" value="'+descripcion+'" readonly required>'+
 
 	            '</div>'+
 
 	          '</div>'+
 
 	          '<!-- Cantidad del producto -->'+
-
-	          '<div class="col-xs-6" style="padding-right:80px">'+
-	            
-	             '<input type="number" class="form-control nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="1" stock="'+stock+'" nuevoStock="'+Number(stock-1)+'" required>'+
+			
+	          '<div class="col-3" >'+
+				'<h6><b>Cantidad:</b></h6>'+
+	             '<input type="number" class="form-control input-lg  form-control-lg nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="1" stock="'+stock+'" nuevoStock="'+Number(stock-1)+'" required>'+
 
 	          '</div>' +
 
 	          '<!-- Precio del producto -->'+
 
-	          '<div class="col-xs-6 ingresoPrecio" style="padding-right:80px">'+
-
+	          '<div class="col-6 ingresoPrecio">'+
+			  	'<h6><b>Total:</b></h6>'+
 	            '<div class="input-group">'+
 
 	              '<span class="input-group-text"><i class="ion ion-social-usd fa-fw"></i></span>'+
 	                 
-	              '<input type="text" class="form-control nuevoPrecioProducto" precioReal="'+precio+'" name="nuevoPrecioProducto" value="'+precio+'" readonly required>'+
+	              '<input type="text" class="form-control input-lg  nuevoPrecioProducto" precioReal="'+precio+'" name="nuevoPrecioProducto" value="'+precio+'" readonly required>'+
 	 
 	            '</div>'+
 	             
@@ -337,17 +338,18 @@ $("#nuevoMetodoPago").change(function(){
 
 	if(metodo == "Efectivo"){
 
-		$(this).parent().parent().removeClass("col-xs-6");
+		$(this).parent().parent().removeClass("col-6");
 
-		$(this).parent().parent().addClass("col-xs-4");
+		$(this).parent().parent().addClass("col-6");
 
 		$(this).parent().parent().parent().children(".cajasMetodoPago").html(
 
-		'<div class="col-xs-4" style="width: 50%">'+ 
-
+		'<div class="row" style="padding:20px 20px">'+
+		'<div class="col-6">'+ 
+			
 			'<div class="input-group">'+ 
 
-				'<span class="input-group-text"><i class="ion ion-social-usd fa-fw"></i></span>'+ 
+				'<span class="input-group-text"><i class="fa fa-money fa-fw"></i></span>'+ 
 
 				'<input type="text" class="form-control input-lg form-control-lg" id="nuevoValorEfectivo" placeholder="Monto" required>'+
 
@@ -355,18 +357,18 @@ $("#nuevoMetodoPago").change(function(){
 
 		'</div>'+
 
-		'<div class="col-xs-4" id="capturarCambioEfectivo" style="width: 50%">'+
+		'<div class="col-6" id="capturarCambioEfectivo" >'+
 
 			'<div class="input-group">'+
 
-				'<span class="input-group-text"><i class="ion ion-social-usd fa-fw"></i></span>'+
+				'<span class="input-group-text"><i class="fa fa-money fa-fw"></i></span>'+
 
 				'<input type="text" class="form-control input-lg form-control-lg" id="nuevoCambioEfectivo" placeholder="Vuelto" readonly required>'+
 
 			'</div>'+
 
-		'</div>'
-		 )
+		'</div>'+
+		'</div>')
 
 		// Agregar formato al precio
 
@@ -385,7 +387,8 @@ $("#nuevoMetodoPago").change(function(){
 
 		 $(this).parent().parent().parent().children('.cajasMetodoPago').html(
 
-		 	'<div class="col-xs-6" style="padding-left:0px">'+
+		 	'<div class="col-12" >'+
+				'<br>'+
                         
                 '<div class="input-group">'+
                      

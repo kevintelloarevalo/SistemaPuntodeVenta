@@ -8,8 +8,7 @@ $usuarios = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
 $arrayVendedores = array();
 $arraylistaVendedores = array();
-$sumaTotalVendedores=array();
-
+$sumaTotalVendedores = array();
 foreach ($ventas as $key => $valueVentas) {
 
   foreach ($usuarios as $key => $valueUsuarios) {
@@ -22,7 +21,7 @@ foreach ($ventas as $key => $valueVentas) {
         #Capturamos las nombres y los valores netos en un mismo array
         $arraylistaVendedores = array($valueUsuarios["nombre"] => $valueVentas["total"]);
 
-         #Sumamos las ventas de cada vendedor
+         #Sumamos los netos de cada vendedor
 
         foreach ($arraylistaVendedores as $key => $value) {
 

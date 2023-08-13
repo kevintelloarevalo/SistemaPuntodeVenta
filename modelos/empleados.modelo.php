@@ -53,7 +53,7 @@ class ModeloEmpleados{
 
 		}else{
 
-			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY idempleado DESC");
 
 			$stmt -> execute();
 

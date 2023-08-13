@@ -55,7 +55,7 @@ $productos = ControladorProductos::ctrMostrarProductos($item, $valor);
 
             '.$productos[$i]["descripcion"].'
 
-            <h5><span class=" label-warning pull-right">$'.$productos[$i]["precio_venta"].'</span></h5>
+            <h5><span class=" label-warning pull-right">S/.'.$productos[$i]["precio_venta"].'</span></h5>
 
           </a>
     

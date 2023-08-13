@@ -50,7 +50,8 @@ $(".tablas").on("click", ".btnEliminarProveedor", function(){
       }).then(function(result){
         if (result.value) {
           
-            window.location = "index.php?ruta=proveedor&idProveedor="+idProveedor;
+            window.location = "index.php?ruta=proveedores&idProveedor="+idProveedor;
+           
         }
 
   })
